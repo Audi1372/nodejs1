@@ -34,7 +34,7 @@ app.get('/createfile', (req, res) => {
         console.log('folder created')
     })
     fs.writeFile(path.join(__dirname, '/test', `${filename(mydate)}.txt`), `${timestamp(mydate)}`, (err, data) => {
-        res.send("hello lakshmi")
+        res.send("file is created")
         if (err) throw (err)
         console.log('file created successfully')
 

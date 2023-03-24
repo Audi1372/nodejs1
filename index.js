@@ -24,7 +24,7 @@ const timestamp = (present) => {
 }
 
 
-app.get('/createfile', (req, res) => {
+app.get('/', (req, res) => {
 
     const mydate = new Date();
     filename(mydate)
